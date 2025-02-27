@@ -9,21 +9,20 @@ number of things it planted (ie. if it plant two things, it will spin twice befo
 import becker.robots.*;
 
 public class RobotTask {
-
-
 	/**
 	 * runs robot task to complete the planting
 	 */
 	public void run() {
 
 		// build a random city called waterloo
-		City field = new City("PlantHills.wld");
+		City field = new City("../PlantHills.wld");
 		field.showThingCounts(true);
 		
-		Robot rob = new Robot(field, 6,0,Direction.EAST,50);
-	
-
-	
+		RobotOne robotOne = new RobotOne(field, 6, 0);
+		robotOne.move();
+		robotOne.climbHill();
+		robotOne.move();
+		robotOne.descendHill();
 
 	}
 }
