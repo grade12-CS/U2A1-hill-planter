@@ -1,7 +1,7 @@
 import becker.robots.*;
 
-public class RobotOne extends PlanterBot {
-    public RobotOne(City city, int x, int y) {
+public class MyRobot extends PlanterBot {
+    public MyRobot(City city, int x, int y) {
         super(city, x, y);
     }
 

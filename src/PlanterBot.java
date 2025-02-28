@@ -2,11 +2,11 @@ import becker.robots.*;
 
 public abstract class PlanterBot extends RobotSE{
     public PlanterBot(City city, int x, int y, Direction direction, int things) {
-        super(city, x, y, direction, things);
+        super(city, y, x, direction, things);
     }
 
     public PlanterBot(City city, int x, int y) {
-        super(city, x, y, Direction.EAST, 50);
+        super(city, y, x, Direction.EAST, 50);
     }
 
     public void plantThings(int things) {
