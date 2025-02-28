@@ -20,9 +20,9 @@ public class RobotTask {
 		
 		RobotOne robotOne = new RobotOne(field, 6, 0);
 		robotOne.move();
-		robotOne.climbHill();
-		robotOne.move();
-		robotOne.descendHill();
-
+		robotOne.completeTwoStepHill();
+		robotOne.completeThreeStepHill();
+		robotOne.completeThreeStepHill();
+		robotOne.completeTwoStepHill();
 	}
 }
