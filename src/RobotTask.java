@@ -4,13 +4,17 @@ numbered rows (first, third, and fifth) to have two things on each corner and we
 have three things on each corner. In addition, the Robot will spin after each plant according to the
 number of things it planted (ie. if it plant two things, it will spin twice before moving to the next corner)
 
- * @author YOU
+ * @author Sarah Yoo 
  */
 import becker.robots.*;
 
 public class RobotTask implements Runnable{
-	private Thread t1, t2, t3, t4;
+	private final Thread t1, t2, t3, t4;
 	
+	/**
+	 *  Four robots put things while climbing and descending hills at the same time 
+	 * @param field city where robot puts things
+	 */
 	public RobotTask(City field) {
 		field.showThingCounts(true);
 		t1 = new Thread(() -> {
@@ -33,7 +37,7 @@ public class RobotTask implements Runnable{
 	}
 
 	/**
-	 * runs robot task to complete the planting
+	 * runs robot task to complete plantings
 	 */
 	@Override
 	public void run() {

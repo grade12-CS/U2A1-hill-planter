@@ -7,5 +7,4 @@ public class RobotMain {
 		RobotTask task = new RobotTask(field);
 		task.run();
 	}
-
 }

@@ -6,11 +6,17 @@ public class ThreeStepBot extends PlanterBot{
         super(city, x, y);
     }
 
+    /**
+     * climbs and descends three steped-hill
+     */
     public void completeThreeStepHill() {
         climbHill();
         descendHill();
     }
 
+    /**
+     * moves three steps up 
+     */
     @Override
     public void climbHill() {
         move();
@@ -24,6 +30,9 @@ public class ThreeStepBot extends PlanterBot{
         plantThings(3);
     }
 
+    /**
+     * moves three steps down 
+     */
     @Override
     public void descendHill() {
         move();
