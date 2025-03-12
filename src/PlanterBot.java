@@ -9,19 +9,15 @@ public abstract class PlanterBot extends RobotSE{
         super(city, y, x, Direction.EAST, 50);
     }
 
+    public abstract void climbHill();
+
+    public abstract void descendHill();
+
     public void plantThings(int things) {
         for (int i = 0; i < things; ++i) {
             putThing();
         }
     }
-
-    public abstract void climbTwoStepHill();
-
-    public abstract void climbThreeStepHill();
-
-    public abstract void descendTwoStepHill();
-
-    public abstract void descendThreeStepHill();
 
     public void climbOnce() {
         turnLeft();
