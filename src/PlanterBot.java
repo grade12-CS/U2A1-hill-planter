@@ -1,5 +1,8 @@
 import becker.robots.*;
 
+/**
+ * abstract class specialized in planting things
+ */
 public abstract class PlanterBot extends RobotSE{
 
     /**

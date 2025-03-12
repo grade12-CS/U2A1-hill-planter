@@ -1,5 +1,8 @@
 import becker.robots.*;
 
+/**
+ * A planter bot that climbs and descends hill in three stesp
+ */
 public class ThreeStepBot extends PlanterBot{
 
     public ThreeStepBot(City city, int x, int y) {
