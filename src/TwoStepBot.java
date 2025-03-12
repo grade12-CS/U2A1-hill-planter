@@ -21,11 +21,13 @@ public class TwoStepBot extends PlanterBot {
     public void climbHill() {
         move();
         plantThings(2);
+        spin(2);
         climbOnce();
         move();
         climbOnce();
         move();
         plantThings(2);
+        spin(2);
     }
 
     /**
@@ -38,6 +40,7 @@ public class TwoStepBot extends PlanterBot {
         move();
         descendOnce();
         plantThings(2);
+        spin(2);
         move();
     }
 }

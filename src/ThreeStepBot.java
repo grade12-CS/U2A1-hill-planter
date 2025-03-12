@@ -21,6 +21,7 @@ public class ThreeStepBot extends PlanterBot{
     public void climbHill() {
         move();
         plantThings(3);
+        spin(3);
         climbOnce();
         move();
         climbOnce();
@@ -28,6 +29,7 @@ public class ThreeStepBot extends PlanterBot{
         climbOnce();
         move();
         plantThings(3);
+        spin(3);
     }
 
     /**
@@ -42,6 +44,7 @@ public class ThreeStepBot extends PlanterBot{
         move();
         descendOnce();
         plantThings(3);
+        spin(3);
         move();
     }
 }

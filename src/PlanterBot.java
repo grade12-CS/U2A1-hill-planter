@@ -34,6 +34,17 @@ public abstract class PlanterBot extends RobotSE{
     public abstract void descendHill();
 
     /**
+     * robot spins for a defined amount of times
+     * @param n the number of times to spin
+     */
+    public void spin(int n) {
+        for (int i = 0; i < n; ++i) {
+            turnAround();
+            turnAround();
+        }
+    }
+
+    /**
      * Plant things for defined amount of number. 
      * @param things the number of things to put.
      */
